@@ -13,7 +13,7 @@ export class AuthenticatorService {
 
   constructor(private http: HttpClient) {}
 
-  login(credentials: { dni_usuario: number; contraseña_usuario: number }) {
+  login(credentials: { dni_usuario: number; contraseña_usuario: string }) {
     const apiUrl = `${base_url}`  // Asegúrate de que la ruta sea la correcta
 
     // Realiza la lógica de autenticación aquí, verifica las credenciales en el servidor.

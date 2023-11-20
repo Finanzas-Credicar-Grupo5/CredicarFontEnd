@@ -33,6 +33,7 @@ export class RegistrarseComponent implements OnInit{
       contraseña_usuario: new FormControl(),
     });
   }
+  
 
   aceptar() {
     this.usuario.dni_usuario = this.form.value['dni_usuario'];
@@ -45,7 +46,7 @@ export class RegistrarseComponent implements OnInit{
       this.usuarioService.insert(this.usuario).subscribe((data) => {
         // Manejar respuesta después de la inserción, si es necesario
         localStorage.setItem('dniGuardado', this.usuario.dni_usuario.toString());
-        localStorage.setItem('contrasenaGuardada', this.usuario.contraseña_usuario.toString());
+        localStorage.setItem('contrasenaGuardada', this.usuario.contraseña_usuario);
         this.authenticatorService.login(this.usuario);
         this.router.navigate(['iniciar-sesion']);
       });
