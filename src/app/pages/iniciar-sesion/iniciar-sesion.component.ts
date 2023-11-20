@@ -52,7 +52,7 @@ export class IniciarSesionComponent {
       const contrasena = this.loginForm.value.contraseña_usuario;
 
       // Lógica para verificar las credenciales en el servidor (cambia esto por tu propia lógica)
-      const apiUrl = 'https://pruebaapi-w6wm.onrender.com/api/usuario';
+      const apiUrl = 'https://credicarapi-xctq.onrender.com/api/usuario';
       const credentials = { dni_usuario: dni, contraseña_usuario: contrasena };
 
       this.http.post<Usuario>(apiUrl, credentials).subscribe(
