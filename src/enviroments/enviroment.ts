@@ -1,5 +1,5 @@
 export const enviroment={
     production : false,
-    base : "http://localhost:8080/api/"
+    base : "https://credicarapi-xctq.onrender.com/api/"
     //base : "http://18.224.136.242:8080/api/"
 }
