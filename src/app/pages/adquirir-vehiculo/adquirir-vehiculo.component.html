@@ -1,0 +1,122 @@
+<app-navbar-user></app-navbar-user>
+
+<!-- Imagenes de los carros -->
+<div class="gallery-wrap">
+  <img src="assets/images/adquirir-vehiculo/flechas/back.png" id="backBtn" (click)="scrollLeft()">
+  <div class="gallery" #scrollContainer>
+    <div>
+      <span><img src="assets/images/adquirir-vehiculo/cars/car1.webp">
+        <p>Modelo: Chevorlet Cayanne</p>
+        <p>Precio: $655,000.00</p>
+      </span>
+      <span><img src="assets/images/adquirir-vehiculo/cars/car2.png">
+        <p>Modelo: Chevorlet</p>
+        <p>Precio: $523,000.50</p>
+      </span>
+      <span><img src="assets/images/adquirir-vehiculo/cars/car3.webp">
+        <p>Modelo: Hyundai Senatra</p>
+        <p>Precio: $350,150.26</p>
+      </span>
+    </div>
+    <div>
+      <span><img src="assets/images/adquirir-vehiculo/cars/car4.webp">
+        <p>Modelo: Nissan</p>
+        <p>Precio: $255,234.10</p>
+      </span>
+      <span><img src="assets/images/adquirir-vehiculo/cars/car5.webp">
+        <p>Modelo: Toyota</p>
+        <p>Precio: $123,645.34</p>
+      </span>
+      <span><img src="assets/images/adquirir-vehiculo/cars/car6.webp">
+        <p>Modelo: Hyundai Senatra</p>
+        <p>Precio: $380,158.26</p>
+      </span>
+    </div>
+    <div>
+      <span><img src="assets/images/adquirir-vehiculo/cars/car7.png">
+        <p>Modelo: Mitsubishu</p>
+        <p>Precio: $58,500.65</p>
+      </span>
+      <span><img src="assets/images/adquirir-vehiculo/cars/car8-a.jpg">
+        <p>Modelo: Lamborghini Urus</p>
+        <p>Precio: $850,522.22</p>
+      </span>
+      <span><img src="assets/images/adquirir-vehiculo/cars/car9.png">
+        <p>Modelo: Audi q5</p>
+        <p>Precio: $68,890.10</p>
+      </span>
+    </div>
+  </div>
+
+  <img src="assets/images/adquirir-vehiculo/flechas/next.png" id="nextBtn" (click)="scrollRight()">
+</div>
+
+
+
+
+
+
+
+
+
+
+   <!-- contenedor izquierda -->
+<div class="container">
+  <div class="row justify-content-center">
+    <div class="col-lg-6 col-md-6 col-sm-12 col-12">
+      <div class="borde">
+        <form [formGroup]="miFormulario" (ngSubmit)="onSubmit()">
+          <!-- Selector de Moneda -->
+
+          <!-- Período de Gracia Total -->
+          <div class="form-group">
+            <label for="montoPrestamo">Monto de prestamo</label>
+            <input formControlName="montoPrestamo" type="text" class="form-control custom-input" id="montoPrestamo" placeholder="Ingrese el monto de prestamo">
+          </div>
+
+          <!-- Período de Gracia Parcial -->
+          <div class="form-group">
+            <label for="tasaInteres">Tasa de Interés</label>
+            <input formControlName="tasaInteres" type="text" class="form-control custom-input" id="tasaInteres" placeholder="Ingrese la tasa de interés">
+          </div>
+
+          <!-- Valor del Auto -->
+          <div class="form-group">
+            <label for="numeroPagos">Frecuencia de Pagos</label>
+            <input formControlName="numeroPagos" type="text" class="form-control custom-input" id="numeroPagos" placeholder="Ingrese la de pagos">
+          </div>
+
+          <!-- Cuota Inicial -->
+          <div class="form-group">
+            <label for="plazoGracia">Plazo de Gracia</label>
+            <input formControlName="plazoGracia" type="text" class="form-control custom-input" id="plazoGracia" placeholder="Plazo de Gracia">
+          </div>
+
+                    <!-- Cuota Inicial -->
+          <div class="form-group">
+            <label for="segurosCargos">Seguro de cargos</label>
+            <input formControlName="segurosCargos" type="text" class="form-control custom-input" id="segurosCargos" placeholder="Ingrese seguro de cargos">
+          </div>
+
+          <div class="form-group">
+            <label for="tasaDescuento">Tasa de descuento</label>
+            <input formControlName="tasaDescuento" type="text" class="form-control custom-input" id="tasaDescuento" placeholder="Ingrese tasa de descuento">
+          </div>
+
+
+          <!-- Botones -->
+          <div class="row justify-content-center mt-3">
+            <div class="col-sm-2 d-flex justify-content-center">
+              <button type="submit" class="btn btn-personalizado-aceptar">Aceptar</button>
+            </div>
+            <div class="col-sm-2 d-flex justify-content-center">
+              <button type="button" class="btn btn-personalizado-limpiar" (click)="miFormulario.reset()">Limpiar</button>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+
+      

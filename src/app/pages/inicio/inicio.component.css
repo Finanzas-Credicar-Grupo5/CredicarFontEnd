@@ -1,0 +1,165 @@
+.Contenedor1{
+    background-image: url('../../../assets/images/inicio/img-inicio.jpg');
+    background-position: center top;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-attachment: fixed; /* Agrega esta línea para el efecto de desplazamiento */
+    height: 70vh;
+}    
+
+.Contenedor2y2{
+    display: flex;
+    background-color: #D9D9D9;
+    padding: 10px;
+    height: 200px;
+    justify-content: center;
+}
+.Contenedor2{
+    background-color: #D9D9D9;
+    height: 260px;
+    margin-top: 30px;
+}
+.Contenedor2 h3{
+    margin-left: 30px;
+    font-family: 'Montserrat', sans-serif;
+    font-style: bold;
+
+}
+/* Contenedor1 */
+.Contenedor2-1{
+    background-color: #8EA2B0;
+    margin-left: 0px;
+    width: 30%;
+    height: 200px;
+    justify-content: center;
+    border-radius: 20px;
+    
+}
+.Contenedor2-2{
+    margin-left: 90px;
+    background-color: #8EA2B0;
+    justify-content: center;
+    width: 30%;
+    height: 200px;
+    display: flex;
+    align-items: center;
+    border-radius: 20px;
+
+}
+.Contenedor2-2 img{
+    width: 100%;
+    height: 200px;
+    display: flex;
+}
+/* Contenedor2 */
+.Contenedor2-1-1{
+
+    width: 35%;
+    height: 200px;
+    border-radius: 20px;
+}
+/* Contenedor con boton */
+.Contenedor2-1-1 button{
+
+    width: 110px;
+    height: 25px;
+    border-radius: 10px;
+    font-family: 'Roboto', sans-serif;
+    font-family: 'Roboto', sans-serif;
+    font-size: 11px;
+    background-color: #0077B5;
+    color: #F5F5F5;
+}
+
+.Contenedor2-1 img{
+    padding-top: 50px;
+}
+.Contenedor2-1{
+    display: flex;
+    height: 200px;
+}
+.Contenedor2-1 ul{
+    text-align: justify;
+    font-family: 'Open Sans', sans-serif;
+}
+.Contenedor2-1 h3{
+    text-align: justify;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+    font-style: bold;
+}
+.Contenedor3{
+    justify-content: center;
+    text-align: justify;
+    display: flex;
+    background-color: #D9D9D9;
+    align-items: center;
+    display: flex;
+    height: 700px;
+    margin-top: 30px;
+    
+}
+.Contenedor3-1{
+background-color: #8EA2B0;
+margin: 8px;
+height: 600px;
+}
+.Contenedor3-2{
+    background-color: #8EA2B0;
+    margin: 8px;
+    height: 600px;
+}
+.Contenedor3-3{
+    background-color: #8EA2B0;
+    margin: 8px;
+    height: 600px;
+}
+.Contenedor3-1 img{
+    width: 65%;
+}
+.Contenedor3-2 img{
+    width: 70%;
+}
+.Contenedor3-3 img{
+    width: 60%;
+}
+.Contenedor3-1 p{
+    margin-top: 30px;
+    margin-left: 30px;
+    margin-right:30px;
+}
+.Contenedor3-2 p{
+    margin-top: 30px;
+    margin-left: 30px;
+    margin-right:30px;
+}
+.Contenedor3-3 p{
+    margin-top: 30px;
+    margin-left: 30px;
+    margin-right:30px;
+}
+/* Titulo de testamento */
+.Contenedor3-1 h4{
+    font-family: 'Montserrat', sans-serif;
+}
+.Contenedor3-2 h4{
+    font-family: 'Montserrat', sans-serif;
+}
+.Contenedor3-3 h4{
+    font-family: 'Montserrat', sans-serif;
+}
+/* Parrafo de testamento */
+.Contenedor3-1 p{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+}
+.Contenedor3-2 p{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+}
+.Contenedor3-3 p{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+}

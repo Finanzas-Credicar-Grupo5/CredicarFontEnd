@@ -1,0 +1,28 @@
+<form [formGroup]="form" (submit)="aceptar()">
+<div class="login-container">
+  <div class="login-box">
+    <h2>Registrate</h2>
+      <div class="form-group">
+        <label for="dni_usuario"></label>
+        <input formControlName="dni_usuario" type="text" id="dni_usuario" placeholder="DNI de Usuario">
+      </div>
+      <div class="form-group">
+        <label for="nombre_usuario"></label>
+        <input formControlName="nombre_usuario" type="text" id="nombre_usuario" placeholder="Nombre de Usuario">
+      </div>
+      <div class="form-group">
+        <label for="apellido_usuario"></label>
+        <input formControlName="apellido_usuario" type="text" id="apellido_usuario" placeholder="Apellido de Usuario">
+      </div>
+      <div class="form-group">
+        <label for="correo_usuario"></label>
+        <input formControlName="correo_usuario" type="text" id="correo_usuario" placeholder="Correo de Usuario">
+      </div>
+      <div class="form-group">
+        <label for="contraseña_usuario"></label>
+        <input formControlName="contraseña_usuario" type="text" id="contraseña_usuario" placeholder="Contraseña de Usuario">
+      </div>
+      <button type="submit">Registrarse</button>
+  </div>
+</div>
+</form>

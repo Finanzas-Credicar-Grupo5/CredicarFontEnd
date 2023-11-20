@@ -1,0 +1,38 @@
+<!-- Aquí colocas la estructura HTML para mostrar el cronograma de pagos según tus necesidades -->
+<div class="container mt-5">
+    <div class="row justify-content-center">
+      <div class="col-lg-8 col-md-8 col-sm-12 col-12">
+        <h2>Cronograma de Pagos</h2>
+  
+        <!-- Agrega aquí la estructura HTML para mostrar el cronograma de pagos -->
+        <table class="table table-bordered mt-3">
+          <thead>
+            <tr>
+              <th scope="col">Periodo</th>
+              <th scope="col">SaldoInicial</th>
+              <th scope="col">Interes</th>
+              <th scope="col">Amortizacion</th>
+              <th scope="col">SegurosCargos</th>
+              <th scope="col">TotalPago</th>
+              <th scope="col">SaldoFinal</th>
+              <th scope="col">VAN</th>
+            </tr>
+          </thead>
+          <tbody>
+            <!-- Utiliza un *ngFor para recorrer los elementos del cronograma y mostrarlos en la tabla -->
+            <tr *ngFor="let item of cronograma">
+              <td>{{ item.mes }}</td>
+              <td>{{ item.pagoMensual }}</td>
+              <td>{{ item.interes }}</td>
+              <td>{{ item.amortizacion }}</td>
+              <td>{{ item.segurosCargos | currency }}</td>
+              <td>{{ item.totalPago | currency }}</td>
+              <td>{{ item.saldoPendiente | currency }}</td>
+              <td>{{ item.van | currency }}</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+  

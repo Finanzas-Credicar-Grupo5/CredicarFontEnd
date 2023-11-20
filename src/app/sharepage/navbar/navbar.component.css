@@ -1,0 +1,23 @@
+.navbar-light .navbar-nav .nav-link{
+    color: var(--third-color);
+}
+
+.navbar-light .navbar-nav .nav-link.active-link{
+    color: #2f5a63;
+    text-decoration: underline;
+}
+
+.logo{
+    width: 112px;
+    height: 88px;
+    flex-shrink: 0;
+}
+
+.icono{
+    width: 60px;
+    height: 60px;
+}
+
+.navbar{
+    background: #8CBEC9;
+}
